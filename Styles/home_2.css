@@ -119,30 +119,33 @@ body{
 }
 .container .slider-controls .prev,
 .container .slider-controls .next{
-    background-color:#ff2d2d;
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
+    background-color: #f1ebebc5;
     padding: 7px;
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
-    color: white;
-    width: 100px;
-    font-weight: 600;
+    color: black;
+    width: 75px;
+    font-weight: 1000;
+    content: '';
+    font-family: monospace;
+    z-index: 2;
 }
 .container .slider-controls .prev.disabled,
 .container .slider-controls .prev{
     position: absolute;
-    left: 30%;
-    top: 400px;
+    left: 65%;
+    top: 375px;
 }
 .container .slider-controls .next,.container .slider-controls .next.disabled{
     position: absolute;
-    right: 30%;
-    top: 400px;
+    right: 65%;
+    top: 375px;
 }
 .container .slider-controls .next.disabled, .container .slider-controls .prev.disabled{
-    background-color: #6b0c0c61;
+    background-color: #c7bebe61;
     cursor: no-drop;
 }
 
@@ -296,14 +299,14 @@ body{
     }
     .container .slider-controls .prev , .container .slider-controls .prev.disabled{
         position: absolute;
-        left: 40%;
-        top: 50px;
+        left: 65%;
+        top: 400px;
     }
     
     .container .slider-controls .next, .container .slider-controls .next.disabled {
         position: absolute;
-        right: 0;
-        top: 50px;
+        right: 65%;
+        top: 400px;
     }
     
     /* ==================================================== */
