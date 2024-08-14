@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Navbar with Animation</title>
+    <link rel="stylesheet" href="Home_1st_Part.css" />
+  </head>
+
+  <header>
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="Travco Logo" /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Destinations ▼</a>
+          <div class="dropdown-content">
+            <a href="#">Cairo</a>
+            <a href="#">Aswan</a>
+            <a href="#">Giza</a>
+            <a href="#">Alexandria</a>
+            <a href="#">Sharm El Sheikh</a>
+            <a href="#">Marsa Alam</a>
+            <a href="#">Mersa Matruh</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services ▼</a>
+          <div class="dropdown-content">
+            <a href="#">Tour Packages</a>
+            <a href="#">Hotel Booking</a>
+            <a href="#">Transportation</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Travco ▼</a>
+          <div class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+    <div class="banner">
+      <div class="overlay">
+        <div class="content">
+          <h1>Unlock the Treasures of Egypt</h1>
+          <p>A Journey Through Time—Join Our Exclusive Group Departures</p>
+          <a href="#" class="button-18">Explore Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider-wrapper flex">
+        <div class="slide flex">
+          <div class="slide-image slider-link prev">
+            <img src="sharm.jpg" />
+          </div>
+          <div class="slide-content">
+            <div class="slide-title">
+              LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+            </div>
+            <div class="slide-text">
+              Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+              oporteat apeirian in vel. Et appareat electram appellantur est. Ei
+              nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.
+            </div>
+            <button class="button-18" role="button">Explore Now</button>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next">
+            <img src="marsa.jpg" />
+          </div>
+          <div class="slide-content">
+            <div class="slide-title">
+              LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+            </div>
+            <div class="slide-text">
+              Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+              oporteat apeirian in vel. Et appareat electram appellantur est. Ei
+              nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.
+            </div>
+            <button class="button-18" role="button">Explore Now</button>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next">
+            <img src="pyramids.jpg" />
+          </div>
+          <div class="slide-content">
+            <div class="slide-title">
+              LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+            </div>
+            <div class="slide-text">
+              Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+              oporteat apeirian in vel. Et appareat electram appellantur est. Ei
+              nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.
+            </div>
+            <button class="button-18" role="button">Explore Now</button>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next">
+            <img src="luxor.jpg" />
+          </div>
+          <div class="slide-content">
+            <div class="slide-title">
+              Luxor
+            </div>
+            <div class="slide-text">
+              Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+              oporteat apeirian in vel. Et appareat electram appellantur est. Ei
+              nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex.
+            </div>
+            <button class="button-18" role="button">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <a href="#" title="Previous" class="arrow slider-link prev"></a>
+        <a href="#" title="Next" class="arrow slider-link next"></a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+  <script defer src="script.js"></script>
+</html>
