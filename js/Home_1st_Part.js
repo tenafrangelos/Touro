@@ -40,15 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // Slideshow code
   (function($) {
     $(document).ready(function() {
-      var s = $('.slider'),
-          sWrapper = s.find('.slider-wrapper'),
-          sItem = s.find('.slide'),
-          btn = s.find('.slider-link'),
+      var s = $('.slider1'),
+          sWrapper = s.find('.slider1-wrapper'),
+          sItem = s.find('.slide1'),
+          btn = s.find('.slider1-link'),
           sWidth = sItem.width(),
           sCount = sItem.length,
-          slide_title = s.find('.slide-title'),
-          slide_text = s.find('.slide-text'),
-          slide_image = s.find('.slide-image img'),
+          slide_title = s.find('.slide1-title'),
+          slide_text = s.find('.slide1-text'),
+          slide_image = s.find('.slide1-image .img1'),
           sTotalWidth = sCount * sWidth;
 
       sWrapper.css('width', sTotalWidth);
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
       btn.on('click', function(e) {
         e.preventDefault();
 
-        if ($(this).hasClass('next')) {
+        if ($(this).hasClass('next1')) {
           (clickCount < (sCount - 1)) ? clickCount++ : clickCount = 0;
-        } else if ($(this).hasClass('prev')) {
+        } else if ($(this).hasClass('prev1')) {
           (clickCount > 0) ? clickCount-- : (clickCount = sCount - 1);
         }
 

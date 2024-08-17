@@ -1,36 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-body {background-color: #000000; overflow-x: hidden; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0; padding: 0;}
+body {overflow-x: hidden; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0; padding: 0;}
 .flex { display: -webkit-flex; display: flex; -webkit-flex-direction: row;  flex-direction: row; -webkit-justify-content: flex-start; justify-content: flex-start;}
 
-.slider-wrapper div {position: relative;}
-.slider-wrapper {margin-top: 15vw;  margin-left: 11vw;}
-.slide-image {height: 24vw;}
-.slide-image img {width: 24vw; cursor: pointer; background-size: cover; border-radius: 12px;}
-.slide-content {width: 25vw; color: #fff; padding:3vw 18vw 3vw 9vw;}
-.slide-title {font-size: 1.2vw; font-weight: 400; letter-spacing: 0.1vw; line-height: 1.55vw; padding-bottom: 1.8vw;}
-.slide-text {font-size: 0.80vw; line-height: 1.2vw; opacity: 0.8; padding-bottom: 4vw;}
-.slide-bullet {width: 0.5vw; height: 0.5vw; background-color: #0b8bcc; border-radius: 200%; position: relative; margin-left: 1.2vw;}
-.slide-nav {margin-left: 64vw; margin-top: -5.5vw;}
+.slider1-wrapper div {position: relative;}
+.slider1-wrapper {margin-top: 15vw;  margin-left: 11vw;}
+.slide1-image {height: 24vw;}
+.slide1-image .img1 {width: 24vw; cursor: pointer; background-size: cover; border-radius: 12px;}
+.slide1-content {width: 25vw; color: black; padding:3vw 18vw 3vw 9vw;}
+.slide1-title {font-size: 1.2vw; font-weight: 400; letter-spacing: 0.1vw; line-height: 1.55vw; padding-bottom: 1.8vw;}
+.slide1-text {font-size: 0.80vw; line-height: 1.2vw; opacity: 0.8; padding-bottom: 4vw;}
+.slide1-bullet {width: 0.5vw; height: 0.5vw; background-color: #0b8bcc; border-radius: 200%; position: relative; margin-left: 1.2vw;}
+.slide1-nav {margin-left: 64vw; margin-top: -5.5vw;}
 
 div.overlay-blue {width: 100%; height: 100%; position: absolute; top: 0; transition: 0.5s ease all;}
 div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
 
 .arrows{width: 3.5vw; margin-top: -5.8vw; margin-left: 72vw; position: relative; padding-top: 20px; padding-bottom: 100px;}
-.arrow {display: inline-block; position: absolute; width: 1.2vw; height: 1.2vw; background: transparent; text-indent: -9999px; border-top: 0.15vw solid #fff; border-left: 0.15vw solid #fff; transition: all .1s ease-in-out; text-decoration: none; color: transparent;
+.arrow {display: inline-block; position: absolute; width: 1.2vw; height: 1.2vw; background: transparent; text-indent: -9999px; border-top: 0.15vw solid black; border-left: 0.15vw solid black; transition: all .1s ease-in-out; text-decoration: none; color: transparent;
 }
 .arrow:hover {border-color: #cb0a0a; border-width: 0.25vw;
 }
-.arrow:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(45deg);}
-.arrow.prev {transform: rotate(-45deg); left: 0;}
-.arrow.next {transform: rotate(135deg); right: 0;}
+.arrows:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(45deg);}
+.arrow.prev1 {transform: rotate(-45deg); left: 0;}
+.arrow.next1 {transform: rotate(135deg); right: 0;}
 
 .navbar {
   display: flex;
-  text-shadow: 2px 2px 8px #000000;
   justify-content: start;
   align-items: center;
   padding: 10px 20px;
-  background-color: black 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
   transition: background-color 0.3s; /* Smooth background transition */
 }
 
@@ -38,12 +37,22 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
   background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
 }
 
-.logo img {
+.nav-links li:hover > .dropdown-content {
+  display: block;
+  opacity : 1;
+}
+
+.dropdown-content a:hover {
+  color: #cb0a0a;
+  border-radius: 12px;
+  background-color: #e5d8d8e4;
+}
+
+.logo .img1 {
   height: 50px;
 }
 
 .nav-links {
-  text-shadow: 2px 2px 8px #000000;
   list-style: none;
   display: flex;
   margin-left: 20px;
@@ -57,7 +66,6 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
 
 .nav-links a {
   text-decoration: none;
-  text-shadow: 2px 2px 8px #000000;
   color: white;
   font-size: 16px;
   display: flex;
@@ -86,7 +94,7 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
   display: block; /* Makes each link take the full width of the dropdown */
 }
 
-.nav-links a img {
+.nav-links a .img1 {
   margin-right: 5px;
 }
 
@@ -95,7 +103,6 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 2px 2px 8px #000000;
 }
 
 #navbar {

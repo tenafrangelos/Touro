@@ -1,58 +1,107 @@
 /* START Media of Screens */
 /* Small screens  */
 @media (min-width:768px) {
-    .container{
+    .container {
         max-width: 720px;
-    }    
+    }
 }
+
 /* medium screens  */
 @media (min-width:992px) {
-    .container{
+    .container {
         max-width: 960px;
-    }    
+    }
 }
+
 @media (min-width:1200px) {
-    .container{
+    .container {
         max-width: 1140px;
-    }    
+    }
 }
 
 /* Large screens  */
 @media (min-width:1400px) {
-    .container{
+    .container {
         max-width: 1900px;
-    }    
+    }
 }
 
 /* =========================================== */
 
 /* STYLE body and Container */
-*{
+* {
     box-sizing: border-box;
 }
-.container{
+
+.container {
     margin: 0 auto;
     padding: 0 15px;
 }
-body{
+
+body {
     font-family: "Work Sans", sans-serif;
 }
+
+.text-container {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://travco.com/Sphinx-and-pyramids.jpg");
+    /* Replace "path/to/your/image.jpg" with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+
 /* =========================================== */
 
 /* Style Gallary */
-.slider-container{
+.slider-container {
     max-width: 100%;
     height: 800px;
     position: relative;
 }
+
 .container .section-header h3 {
     font-size: 40px;
 }
+
 .container .section-header p {
     margin-bottom: 0;
     font-size: 25px;
 }
-.slider-container .slide-number{
+
+.slider-container .slide-number {
     position: absolute;
     color: #ffffff;
     background-color: rgb(0 0 0 / 48%);
@@ -64,6 +113,7 @@ body{
     padding: 7px;
     font-weight: 600;
 }
+
 .slider-container .image-container img {
     margin: 0 auto;
     border-radius: 10px;
@@ -78,11 +128,12 @@ body{
     transition: 0.5s;
 }
 
-.slider-container .image-container img.active{
+.slider-container .image-container img.active {
     transition: 0.3s;
     opacity: 1;
 }
-.text-img{
+
+.text-img {
     display: none;
     width: 250px;
     height: 50px;
@@ -94,31 +145,38 @@ body{
     z-index: 3;
     color: white;
 }
+
 .text-img.active {
     display: block;
 }
-.slider-container .image-container .text-img:hover .main{
+
+.slider-container .image-container .text-img:hover .main {
     transition: 0.3s;
     font-size: 35px;
 }
-.slider-container .image-container .text-img:hover .tour{
+
+.slider-container .image-container .text-img:hover .tour {
     transition: 0.3s;
     padding-top: 0px;
     font-size: 18px;
 }
+
 .text-img .main {
     margin: 0;
     font-size: 40px;
 }
-.text-img .tour{
+
+.text-img .tour {
     padding-top: 115px;
     transition: 0.4s;
 }
-.container .slider-controls{
+
+.container .slider-controls {
     position: relative;
 }
+
 .container .slider-controls .prev,
-.container .slider-controls .next{
+.container .slider-controls .next {
     font-size: 50px;
     text-align: center;
     background-color: #f1ebebc5;
@@ -133,18 +191,23 @@ body{
     font-family: monospace;
     z-index: 2;
 }
+
 .container .slider-controls .prev.disabled,
-.container .slider-controls .prev{
+.container .slider-controls .prev {
     position: absolute;
     left: 65%;
     top: 375px;
 }
-.container .slider-controls .next,.container .slider-controls .next.disabled{
+
+.container .slider-controls .next,
+.container .slider-controls .next.disabled {
     position: absolute;
     right: 65%;
     top: 375px;
 }
-.container .slider-controls .next.disabled, .container .slider-controls .prev.disabled{
+
+.container .slider-controls .next.disabled,
+.container .slider-controls .prev.disabled {
     background-color: #c7bebe61;
     cursor: no-drop;
 }
@@ -155,27 +218,33 @@ body{
 .form .container {
     margin: 40px auto;
 }
-.form fieldset{
+
+.form fieldset {
     border: none;
     background-color: #eddcdc40;
 }
+
 .form legend {
     font-size: 40px;
 }
+
 .form .form-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.form label{
+
+.form label {
     font-size: 25px;
 }
-.form .form-container .input-email{
+
+.form .form-container .input-email {
     padding: 8px 8px;
     width: 370px;
-} 
-.form .form-container .submit{
+}
+
+.form .form-container .submit {
     padding: 8px;
     font-size: 20px;
     background-color: #F44336;
@@ -184,51 +253,62 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* ========================================= */
 
 /* Style Footer */
 
-.footer{
-    margin-top:20px ;
+.footer {
+    margin-top: 20px;
     background-color: rgb(0, 0, 0);
 }
-.footer .container{
-    padding: 20px 0 ;
+
+.footer .container {
+    padding: 20px 0;
 }
+
 .footer .container .content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
+
 .footer .columns {
     display: contents;
 }
-.label{
+
+.label {
     font-weight: 500;
     font-size: 35px;
     color: white;
 }
+
 .footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .footer ul li {
     padding: 10px 0;
 }
-.footer ul li a, .footer .contacts a , .end a {
+
+.footer ul li a,
+.footer .contacts a,
+.end a {
     text-decoration: none;
     color: rgb(155, 155, 155);
     font-size: 20px;
     transition: 0.3s;
 }
-.footer .contacts a{
+
+.footer .contacts a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 22px;
     transition: 0.3s;
 }
 
-.footer .container a:hover{
+.footer .container a:hover {
     color: rgb(255 0 0);
     padding-left: 10px;
 }
@@ -237,30 +317,35 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.footer .contacts .social ul{
+
+.footer .contacts .social ul {
     display: flex;
 }
+
 .footer .contacts .social ul li {
     padding: 0 10px;
 }
+
 .footer .contacts .social ul li a {
     font-size: 30px;
 }
-.footer .contacts a{
+
+.footer .contacts a {
     font-size: 20px;
     font-weight: 800;
 }
 
-.footer .contacts .hint{
+.footer .contacts .hint {
     font-size: 18px;
 }
 
-.footer .contacts .location{
+.footer .contacts .location {
     font-size: 18px;
     font-weight: 500;
     color: white;
 }
-.end{
+
+.end {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -271,12 +356,13 @@ body{
 @media (max-width:767px) {
 
     /* Gallary */
-    
-    .container .section-header{
+
+    .container .section-header {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .slider-container .slide-number {
         position: absolute;
         color: white;
@@ -287,85 +373,100 @@ body{
         left: 0px;
         border-radius: 10px;
         padding: 7px;
-    }   
+    }
+
     .slider-container .image-container .text-img:hover .main {
         transition: 0.3s;
         font-size: 45px;
     }
+
     .slider-container .image-container .text-img:hover .tour {
         transition: 0.3s;
         padding-top: 0px;
         font-size: 20px;
     }
-    .container .slider-controls .prev , .container .slider-controls .prev.disabled{
+
+    .container .slider-controls .prev,
+    .container .slider-controls .prev.disabled {
         position: absolute;
         left: 65%;
         top: 400px;
     }
-    
-    .container .slider-controls .next, .container .slider-controls .next.disabled {
+
+    .container .slider-controls .next,
+    .container .slider-controls .next.disabled {
         position: absolute;
         right: 65%;
         top: 400px;
     }
-    
+
     /* ==================================================== */
-    
+
     /* Style form */
-    
-    .form .form-container{
+
+    .form .form-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .form .container legend{
+
+    .form .container legend {
         font-size: 27px;
         padding: 20px 0;
     }
+
     .form label {
         font-size: 20px;
         text-align: center;
         padding-bottom: 10px;
     }
-    .form .form-container .input-email{
+
+    .form .form-container .input-email {
         width: 230px;
     }
+
     /* =============================================== */
-    
+
     /* Style Footer */
-    
-    .footer .container{
+
+    .footer .container {
         padding-left: 10px;
     }
-    .footer .container .content{
+
+    .footer .container .content {
         display: flex;
         flex-direction: column;
     }
-    .footer .columns .label:not(:last-child){
+
+    .footer .columns .label:not(:last-child) {
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.719);
     }
+
     .footer .contacts .label {
         margin-top: 0;
     }
-    .footer .col1 ul, .footer .col2 ul,.footer .col3 ul{
+
+    .footer .col1 ul,
+    .footer .col2 ul,
+    .footer .col3 ul {
         display: none;
     }
-    .footer .col1 ul.open, .footer .col2 ul.open, .footer .col3 ul.open{
+
+    .footer .col1 ul.open,
+    .footer .col2 ul.open,
+    .footer .col3 ul.open {
         display: block;
     }
-    .footer .end{
+
+    .footer .end {
         display: flex;
         flex-direction: column;
     }
-    .footer .end  a{
+
+    .footer .end a {
         font-size: 16px;
     }
-    
-    
-}    
 
 
-
-
-
+}
