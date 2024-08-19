@@ -29,12 +29,12 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0); /* Black with 50% opacity */
-  /* transition: background-color 0.5s; Smooth background transition */
+  background-color: rgba(0, 0, 0,0.3s); /* Black with 30% opacity */
+  transition: background-color 0.5s; /* Smooth background transition */
 }
 
 .navbar:hover {
-  background-color: rgba(0, 0, 0); /* Darker on hover */
+  background-color: rgba(0, 0, 0,0.5s); /* Darker on hover */
 }
 
 .nav-links li:hover > .dropdown-content {
@@ -107,7 +107,7 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
 
 #navbar {
   transition: background-color 0.5s; /* Smooth transition for background color change */
-  background-color: transparent; /* Initial background color */
+  background-color: #F44336; /* Initial background color */
   width: 100%; /* Ensure the navbar spans the full width */
   position: fixed; /* Keep navbar at the top */
   top: 0;
