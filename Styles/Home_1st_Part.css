@@ -26,11 +26,11 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
 
 .navbar {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  transition: background-color 0.3s; /* Smooth background transition */
+  transition: background-color 0.5s; /* Smooth background transition */
 }
 
 .navbar:hover {
@@ -44,7 +44,7 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
 
 .dropdown-content a:hover {
   color: #cb0a0a;
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: #e5d8d8e4;
 }
 

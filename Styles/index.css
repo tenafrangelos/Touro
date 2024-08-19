@@ -4,12 +4,15 @@ body {
     padding: 0;
     background-color: #f0f8ff;
 }
-
-header {
+header{
+    background-color: #F44336;
+}
+h1 {
     background-color: #F44336;
     color: white;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
+    width: 100%;
 }
 
 main {
