@@ -29,12 +29,12 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  transition: background-color 0.5s; /* Smooth background transition */
+  background-color: rgba(0, 0, 0); /* Black with 50% opacity */
+  /* transition: background-color 0.5s; Smooth background transition */
 }
 
 .navbar:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  background-color: rgba(0, 0, 0); /* Darker on hover */
 }
 
 .nav-links li:hover > .dropdown-content {
