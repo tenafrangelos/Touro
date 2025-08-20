@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../Styles/SignUp.css">
+    <link rel="stylesheet" href="../Styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img class="img1" src="https://travco.com/logo-white.png" alt="Travco Logo" />
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Destinations ▼</a>
+                    <div class="dropdown-content">
+                        <a href="./Cairo.html">Cairo</a>
+                        <a href="./Aswan.html">Aswan</a>
+                        <a href="./Hurghada.html">Hurghada</a>
+                        <a href="./Luxor.html">Luxor</a>
+                        <a href="./Sharm El-Sheikh.html">Sharm El Sheikh</a>
+                        <a href="./Marsa Alam.html">Marsa Alam</a>
+                        <a href="./Mersa Matruh.html">Mersa Matruh</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services ▼</a>
+                    <div class="dropdown-content">
+                        <a href="./Destination.html">Destination Guide</a>
+                        <a href="https://travco.com/en/packages">Packages</a>
+                        <a href="https://travco.com/en/nile-cruises">Nile Cruises</a>
+                        <a href="https://travco.com/en/tours-activities">Tours & Activities</a>
+                        <a href="https://travco.com/en/transfers-and-airport-services">Transfers and Airport Services</a>
+                        <a href="https://travco.com/en/visa">Meet & Assist + Visa</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Travco ▼</a>
+                    <div class="dropdown-content">
+                        <a href="">About Touro</a>
+                        <a href="https://travco.com/en/about-travco-travel">About Travco</a>
+                        <a href="https://travco.com/en/travco-news">Travco News</a>
+                        <a href="https://travco.com/en/international-offices">International Offices</a>
+                        <a href="https://travco.com/en/affiliated-companies">Affiliated Companies</a>
+                        <a href="https://travco.com/en/contact-us">Contact Us</a>
+                        <a href="https://travco.com/en/be-our-partner">Be Travco Partner</a>
+                        <a href="https://travco.com/en/branches">Branches</a>
+                        <a href="https://travco.com/en/destination-handbook">Destination Handbook</a>
+                        <a href="https://travco.com/en/testimonials">Testimonials</a>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <a href="./SignUp.html" style="text-decoration: none; text-align: right; color: white; padding: auto; margin-right: 30px;"> Sign Up </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-hero">
+        <div class="contact-hero-img"></div>
+        <div class="contact-hero-text">
+            <h1>Get in Touch With Us</h1>
+            <p>We'd love to help you plan your next adventure.</p>
+        </div>
+    </div>
+
+    <div class="contact-main">
+        <div class="contact-form-card">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info-card">
+            <h2>Contact Information</h2>
+            <div class="contact-info-list">
+                <div class="contact-info-item"><span class="contact-icon">📞</span> +1 234 567 890</div>
+                <div class="contact-info-item"><span class="contact-icon">✉️</span> <a href="mailto:contact@takeyourtime.com">contact@takeyourtime.com</a></div>
+                <div class="contact-info-item"><span class="contact-icon">📍</span> 123 Adventure Lane, Travel City</div>
+            </div>
+            <div class="map-container" id="mapContainer">
+                <iframe id="gmap" src="https://www.google.com/maps?q=30.076872121981,31.28461037301813&z=17&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ContactUs.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
